@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General styling for the page */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FBF4FD;
+    /* overflow: hidden; */
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+#main-container {
+    width: 100%;
+    height: 80%;
+}
+
+/* Icon container for the logo section */
+#icon-container {
+    margin: 25px 60px;
+}
+
+/* Icon logo styling */
+#icon {
+    height: 50px;
+    width: 150px;
+}
+
+/* Header section */
+#header {
+    float: left;
+    width: 50%;
+}
+
+/* Styling the header text */
+.header {
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 60px;
+    text-transform: uppercase;
+}
+
+/* Calculator container, aligned to the right */
+#calculator-container {
+    width: 50%;
+    height: 450px;
+    float: right;
+}
+
+/* Circular background behind the calculator */
+#background-circle {
+    height: 450px;
+    width: 450px;
+    background-color: #F5eaf9;
+    border-radius: 50%;
+}
+
+/* Main calculator box */
+#calculator {
+    height: 550px;
+    width: 350px;
+    background-color: white;
+    border: 10px solid #e2e2e2;
+    position: relative;
+    left: 42px;
+    bottom: 20px;
+    border-radius: 33px;
+}
+
+/* Output container for displaying results */
+#output-container {
+    background-color: #f3f2f2;
+    height: 110px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    margin: 12px 25px;
+    padding-bottom: 10px;
+}
+
+/* Output and input field styles */
+.output-field, .input-field {
+    background-color: #F3F2F2;
+    width: 94%;
+    margin: 1px 3px;
+    font-size: 40px;
+    padding: 13px 5px 0px 5px;
+    border-radius: 20px;
+    border: none;
+    text-align: end;
+}
+
+/* Remove focus outline on input and output fields */
+.output-field:focus, .input-field:focus {
+    outline: none;
+}
+
+/* Row for calculator buttons */
+.btn-row {
+    margin: auto;
+    width: 93%;
+}
+
+/* Button styles */
+button {
+    margin: 4px 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* Icon background hover effect */
+.bg-icon:hover {
+    background-color: #fceebd;
+}
+
+/* General button hover effect */
+button:hover {
+    cursor: pointer;
+    background-color: #2a2828;
+    color: white;
+}
+
+/* Font Awesome icons inside buttons */
+button > i {
+    color: #bd882a;
+    font-size: 15px;
+}
+
+/* Change icon color on hover */
+button:hover > i {
+    color: white;
+}
+
+/* Specific icon background color */
+.bg-icon {
+    background-color: #fceebd;
+}
+
+/* Special button for zero (wider) */
+.zero {
+    width: 115px;
+}
+
+/* Special styling for the equal button */
+.equal {
+    background-color: #ffc138;
+    height: 110px;
+    position: absolute;
+    bottom: 55px;
+}
+
+/* Adjust size for specific buttons */
+.btn1 {
+    width: 92px;
+}
+
+/* Footer styling */
+footer {
+    font-family: "Poppins", sans-serif;
+    padding: 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    /* Adjust icon size and center alignment */
+    #icon {
+        height: 50px;
+        width: 134px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    #main-container {
+        width: 116%;
+        height: 93%;
+        
+    }
+
+    /* Align icon and header horizontally */
+    #icon-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 96%;
+        margin: 5%;
+    }
+
+    /* Adjust calculator container positioning */
+    #calculator-container {
+        float: none;
+        padding-left: 24%;
+        padding-right: 15%;
+        height: 80%;
+        
+    }
+
+    /* Reduce header font size */
+    .header {
+        font-size: 36px;
+    }
+
+    /* Adjust footer alignment */
+    footer {
+        text-align: center;
+        position: relative; /* Change to relative */
+        top: 0;
+        width: 100%;
+        padding-bottom: 10px; /* Ensure some padding */
+        margin-top: 20px; /* Add margin for spacing */
+
+    }
+    
+}
+
+/* Media query for screens smaller than 412px */
+@media (max-width: 412px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+        width: 80%;
+      
+    }
+
+    #main-container {
+        width: 195%;
+        height: 739px;
+       
+     
+    }
+ #icon-container {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 3%;
+    }
+    /* Adjust icon size */
+    #icon {
+        height: 50px;
+        width: 134px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    /* Adjust header font size for smaller screens */
+    .header {
+        font-size: 16px;
+    }
+
+    /* Adjust calculator container on small screens */
+    #calculator-container {
+        float: none;
+        padding-left: 15%;
+        height: 80%;
+        width:100%;
+    }
+
+    /* Adjust footer positioning on smaller screens */
+    footer {
+        text-align: center;
+        position: relative; /* Change to relative */
+        bottom: 0;
+        width: 100%;
+        height:10px;
+        padding-bottom: 10px; /* Ensure some padding */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+    
+}
