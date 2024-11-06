@@ -16,17 +16,6 @@ body {
     height: 80%;
 }
 
-/* Icon container for the logo section */
-#icon-container {
-    margin: 25px 60px;
-}
-
-/* Icon logo styling */
-#icon {
-    height: 50px;
-    width: 150px;
-}
-
 /* Header section */
 #header {
     float: left;
